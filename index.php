@@ -13,11 +13,18 @@
     </style>
 </head>
 <body>
+    <?php
+        $foxId = rand(1, 122); 
+        $foxImg = "https://randomfox.ca/images/" . $foxId . ".jpg";
+    ?>
     <div class="menu">
         <h1>Menu Principal</h1>
         <a href="cadastro_usuario.php">Cadastro de Usuários</a>
         <a href="cadastro_tarefa.php">Cadastro de Tarefas</a>
         <a href="gerenciar_tarefas.php">Gerenciar Tarefas</a>
+
+        <img src="<?php echo $foxImg; ?>" alt="Raposa aleatória">
+        
     </div>
 </body>
 </html>
